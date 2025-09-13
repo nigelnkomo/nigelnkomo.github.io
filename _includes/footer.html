@@ -29,21 +29,18 @@
   </p>
 
   <p>
-    {%- capture _platform -%}
-      <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+    {%- capture _topic -%}
+      <a href="https://en.wikipedia.org/wiki/Technical_writing" target="_blank" rel="noopener">technical writing</a>
     {%- endcapture -%}
 
-    {%- capture _theme -%}
+    {%- capture _field -%}
       <a
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="v{{ theme.version }}"
-        href="https://github.com/cotes2020/jekyll-theme-chirpy"
+        href="https://en.wikipedia.org/wiki/Computer_engineering"
         target="_blank"
         rel="noopener"
-      >Chirpy</a>
+      >computer engineering</a>
     {%- endcapture -%}
 
-    {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
+    {{ site.data.locales[include.lang].meta | replace: ':TOPIC', _topic | replace: ':FIELD', _field }}
   </p>
 </footer>
