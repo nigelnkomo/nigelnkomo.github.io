@@ -97,9 +97,8 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   .site-title {
     @extend %clickable-transition;
     @extend %sidebar-link-hover;
+    @extend %heading;
 
-    font-family: inherit;
-    font-weight: 900;
     font-size: 1.75rem;
     line-height: 1.2;
     letter-spacing: 0.25px;
