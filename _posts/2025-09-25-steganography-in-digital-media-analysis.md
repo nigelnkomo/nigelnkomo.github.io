@@ -88,5 +88,5 @@ This section will be developed in later stages of the analysis.
 This section will be developed in later stages of the analysis.
 
 ## Footnotes
-[^1]: [Adler Mortimer](https://www.britannica.com/topic/philosophy-of-education/Critical-thinking)
+[^1]: [Adler Mortimer](https://www.britannica.com/biography/Mortimer-J-Adler)
 
