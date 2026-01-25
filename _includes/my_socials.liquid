@@ -1,0 +1,31 @@
+<div class="contact-icons">
+  {% if site.data.socials.email %}
+    <a href="mailto:{{ site.data.socials.email }}" title="email">
+      <i class="ph-light ph-envelope"></i>
+    </a>
+  {% endif %}
+
+  {% if site.data.socials.whatsapp_number %}
+    <a href="https://wa.me/{{ site.data.socials.whatsapp_number }}" title="WhatsApp">
+      <i class="ph-light ph-whatsapp-logo"></i>
+    </a>
+  {% endif %}
+
+  {% if site.data.socials.github_username %}
+    <a href="https://github.com/{{ site.data.socials.github_username }}" title="GitHub">
+      <i class="ph-light ph-github-logo"></i>
+    </a>
+  {% endif %}
+
+  {% if site.data.socials.cv_pdf %}
+    <a href="{{ site.data.socials.cv_pdf | relative_url }}" target="_blank" title="CV">
+      <i class="ph-light ph-file-pdf"></i>
+    </a>
+  {% endif %}
+
+  {% if site.data.socials.phone_number %}
+    <a href="tel:{{ site.data.socials.phone_number | relative_url }}" target="_blank" title="Call">
+      <i class="ph-light ph-phone-call"></i>
+    </a>
+  {% endif %}
+</div>

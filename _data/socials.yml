@@ -8,6 +8,9 @@ email: nigel.nkomo@proton.me # your email address
 # scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 whatsapp_number: +263775358610 # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+phone_number: +263775358610 # your phone number (displayed on contact page)
+github_username: nigelnkomo # your GitHub username
+
 # custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
 #   logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
 #   title: Custom Social

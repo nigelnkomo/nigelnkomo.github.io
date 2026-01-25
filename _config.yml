@@ -7,13 +7,13 @@ first_name: nigel
 middle_name: b.
 last_name: nkomo
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Feel free to reach out for collaborations or inquiries!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicons/favicon-512.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://nigelnkomo.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -38,7 +38,7 @@ repo_trophies:
 # update these URLs. These are used in the repository templates.
 external_services:
   github_readme_stats_url: https://github-readme-stats.vercel.app
-  github_profile_trophy_url: https://github-profile-trophy.vercel.app
+  github_profile_trophy_url: https://github-profile-trophy.screw-hand.vercel.app
 
 # -----------------------------------------------------------------------------
 # RSS Feed
@@ -90,8 +90,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: c0rvid # blog_name will be displayed in your blog page
+blog_description: A blog about science and technology.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -127,17 +127,17 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+# external_sources:
+#   - name: medium.com
+#     rss_url: https://medium.com/@al-folio/feed
+#     categories: [external-posts]
+#     tags: [medium]
+#   - name: Google Blog
+#     posts:
+#       - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+#         published_date: 2024-05-14
+#     categories: [external-posts]
+#     tags: [google]
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -154,15 +154,15 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
       layout: post
-    output: true
+    output: false
   projects:
     output: true
   teachings:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -459,7 +459,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: ""
   highlightjs:
     integrity:
       css:
