@@ -26,6 +26,7 @@ $yellow-color: #efcc00 !default;
 
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
+$grey-color-lighter: #fdfdfd !default;
 $grey-color-dark: #1c1c1d;
 $grey-900: #212529;
 
@@ -53,3 +54,10 @@ $back-to-top-width: $back-to-top-diameter;
 
 // Dimensions
 $max-content-width: 930px;
+
+// Custom Typeface Variables
+$font-absans: 'Absans', sans-serif;
+$font-aujournuit: 'Aujournuit', sans-serif;
+$font-general-sans: 'General Sans', sans-serif;
+$font-ronzino: 'Ronzino', sans-serif;
+$font-satoshi: 'Satoshi', sans-serif;
