@@ -42,3 +42,35 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: Delight;
+  src: url('../fonts/typefaces/delight-light.otf') format('opentype');
+  // font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Humane;
+  src: url('../fonts/typefaces/Humane-VF.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Darwin;
+  src: url('../fonts/typefaces/darwinserif-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MajorMono;
+  src: url('../fonts/typefaces/MajorMonoDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

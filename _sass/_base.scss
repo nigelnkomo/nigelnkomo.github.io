@@ -10,7 +10,12 @@
 }
 
 html {
-  font-size: 17px;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, .post-title  span{
+  font-family: $font-major-mono;
+  text-transform: uppercase;
 }
 
 p,
@@ -260,6 +265,7 @@ ul.task-list input[type="checkbox"] {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+  font-family: $font-major-mono;
 }
 
 .navbar .dropdown-menu,
