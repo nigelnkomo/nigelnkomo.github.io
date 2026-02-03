@@ -1,4 +1,18 @@
 $(document).ready(function () {
+  // close mobile navbar when tapping outside of it
+  const $navbarNav = $("#navbarNav");
+  $(document).on("click touchstart", function (event) {
+    if (!$navbarNav.hasClass("show")) {
+      return;
+    }
+    const $target = $(event.target);
+    const clickedInsideNav = $target.closest("#navbarNav").length > 0;
+    const clickedToggler = $target.closest(".navbar-toggler").length > 0;
+    if (!clickedInsideNav && !clickedToggler) {
+      $navbarNav.collapse("hide");
+    }
+  });
+
   // add toggle functionality to abstract, award and bibtex buttons
   $("a.abstract").click(function () {
     $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
