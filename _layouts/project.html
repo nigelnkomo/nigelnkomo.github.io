@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<main class="project-layout">
+  <header class="project-header">
+    <div class="project-meta">
+      <span>{{ page.year }}</span>
+      {% if page.role %}
+      <span>{{ page.role }}</span>
+      {% endif %}
+      {% if page.client %}
+      <span>{{ page.client }}</span>
+      {% endif %}
+    </div>
+    <h1 class="project-title">{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <p class="project-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+    {% if page.tags %}
+    <div class="project-tags">
+      {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="project-body">
+    {{ content }}
+  </div>
+
+  {% if page.outcomes %}
+  <section class="project-outcomes">
+    <h2 class="section-heading">Outcomes</h2>
+    <div class="section-body">
+      {% for outcome in page.outcomes %}
+      <div class="outcome-item">
+        <span class="outcome-label">{{ outcome.label }}</span>
+        <span class="outcome-value">{{ outcome.value }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.next_project %}
+  <nav class="project-nav">
+    <a href="{{ site.baseurl }}/projects/{{ page.next_project }}/" class="arrow-link">Next Project →</a>
+  </nav>
+  {% endif %}
+</main>

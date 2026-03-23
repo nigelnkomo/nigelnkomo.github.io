@@ -1,0 +1,68 @@
+---
+layout: default
+---
+<main class="paper-layout">
+  <aside class="paper-toc">
+    <nav class="toc-nav">
+      <div class="toc-header">
+        <span class="toc-label">{{ page.paper_type | default: "Paper" }}</span>
+        <a href="{{ site.baseurl }}/academic-writing/" class="toc-back">← Back to Writing</a>
+      </div>
+      <ul class="toc-list">
+        {% for section in page.sections %}
+        <li><a href="#{{ section.id }}" class="toc-link{% if forloop.first %} active{% endif %}">{{ section.title }}</a></li>
+        {% endfor %}
+        {% if page.references %}
+        <li><a href="#references" class="toc-link">References</a></li>
+        {% endif %}
+      </ul>
+      <div class="toc-footer">
+        <div class="toc-meta">
+          {% if page.version %}
+          <span class="toc-version">v{{ page.version }}</span>
+          {% endif %}
+          <span class="toc-date">{{ page.date | date: "%B %d, %Y" }}</span>
+        </div>
+      </div>
+    </nav>
+  </aside>
+
+  <article class="paper-content">
+    <header class="paper-header">
+      {% if page.paper_type %}
+      <div class="paper-meta">
+        <span class="paper-type">{{ page.paper_type }}</span>
+        {% if page.journal %}
+        <span>{{ page.journal }}</span>
+        {% endif %}
+      </div>
+      {% endif %}
+      <h1 class="paper-title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <p class="paper-subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+      {% if page.authors %}
+      <div class="paper-authors">
+        {% for author in page.authors %}
+        <span class="author">{{ author }}</span>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </div>
+      {% endif %}
+    </header>
+
+    {{ content }}
+
+    {% if page.references %}
+    <section class="paper-section references-section" id="references">
+      <h2 class="section-heading">References</h2>
+      <div class="section-body">
+        <ol class="references-list">
+          {% for ref in page.references %}
+          <li>{{ ref }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+    </section>
+    {% endif %}
+  </article>
+</main>

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<main class="photo-series-layout">
+  <header class="series-header">
+    <h1 class="series-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="series-description">{{ page.description }}</p>
+    {% endif %}
+    {% if page.location or page.date %}
+    <div class="series-meta">
+      {% if page.location %}
+      <span class="series-location">{{ page.location }}</span>
+      {% endif %}
+      {% if page.date %}
+      <span class="series-date">{{ page.date }}</span>
+      {% endif %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="series-preview-grid">
+    {% for image in page.images %}
+    <div class="preview-item" data-index="{{ forloop.index0 }}">
+      <a href="{{ site.baseurl }}/photography/gallery/?id={{ page.series_id }}&image={{ forloop.index0 }}">
+        <img src="{{ image.thumbnail | default: image.src }}" alt="{{ image.caption | default: page.title }}" loading="lazy" />
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+
+  <nav class="series-pagination">
+    <a href="{{ site.baseurl }}/photography/" class="page-btn">← Back to Photography</a>
+  </nav>
+</main>

@@ -1,0 +1,32 @@
+title: Nigel Nkomo
+description: Product designer and builder working across interfaces, systems, and visual storytelling.
+url: "https://nigelnkomo.github.io"
+baseurl: ""
+permalink: /:path/
+markdown: kramdown
+
+github_repo: nigelnkomo/nigelnkomo.github.io
+github_stats_url: "https://github-readme-stats-asrq6xe1s-nigels-projects-681415be.vercel.app/api?username=nigelnkomo"
+github_trophy_url: "https://github-profile-trophy.screw-hand.vercel.app/?username=nigelnkomo"
+
+collections:
+  papers:
+    output: true
+    permalink: /academic-writing/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+  photo_series:
+    output: true
+    permalink: /photography/:name/
+  photography:
+    output: true
+
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+
+sass:
+  sass_dir: _sass
+  style: compressed

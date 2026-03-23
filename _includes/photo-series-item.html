@@ -1,0 +1,18 @@
+<article class="series-item reveal">
+  <div class="series-number">{{ include.index | default: "01" | prepend: "0" }}</div>
+  <div class="series-content">
+    <h3>{{ include.series.title }}</h3>
+    <p>{{ include.series.description }}</p>
+    {% if include.series.location %}
+    <p class="series-location">{{ include.series.location }}</p>
+    {% endif %}
+    <a href="{{ include.series.url }}" class="arrow-link">View Series</a>
+  </div>
+  {% if include.series.thumbnail %}
+  <div class="series-thumbnail">
+    <a href="{{ include.series.url }}">
+      <img src="{{ include.series.thumbnail }}" alt="{{ include.series.title }}" />
+    </a>
+  </div>
+  {% endif %}
+</article>

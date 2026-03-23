@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Vercetti Regular';
+  src: url('/assets/fonts/Vercetti-Regular/Vercetti Regular/OpenType WOFFs/Vercetti-Regular.woff2') format('woff2'),
+       url('/assets/fonts/Vercetti-Regular/Vercetti Regular/OpenType WOFFs/Vercetti-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeutralFace';
+  src: url('/assets/fonts/neutral-face/NeutralFace.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeutralFace';
+  src: url('/assets/fonts/neutral-face/NeutralFace-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}

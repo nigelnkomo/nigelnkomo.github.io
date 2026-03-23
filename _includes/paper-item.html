@@ -1,0 +1,14 @@
+<article class="paper-item reveal" data-types="{{ include.paper.types | join: ',' }}" data-page="1">
+  <div class="paper-number">{{ include.index | default: "01" | prepend: "0" }}</div>
+  <div class="paper-content">
+    <div class="paper-meta">
+      {% for type in include.paper.types %}
+      <span class="tag">{{ type }}</span>
+      {% endfor %}
+      <span>{{ include.paper.date | date: "%B %Y" }}</span>
+    </div>
+    <h3>{{ include.paper.title }}</h3>
+    <p>{{ include.paper.description }}</p>
+    <a href="{{ include.paper.url }}" class="arrow-link">Read Paper</a>
+  </div>
+</article>

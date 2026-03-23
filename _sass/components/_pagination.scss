@@ -1,0 +1,77 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+
+.page-btn {
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  font-size: var(--text-sm);
+  cursor: none;
+  transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+  background: var(--paper-warm);
+}
+
+.page-btn.active {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.page-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.prev-btn,
+.next-btn {
+  font-size: var(--text-base);
+  padding: 8px 12px;
+}
+
+.series-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 48px 0;
+}
+
+.series-pagination .page-btn {
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  font-size: var(--text-sm);
+  cursor: none;
+  transition: all 0.2s ease;
+}
+
+.series-pagination .page-btn:hover {
+  background: var(--paper-warm);
+}
+
+.series-pagination .page-btn.active {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.series-pagination .page-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.series-pagination .prev-btn,
+.series-pagination .next-btn {
+  font-size: var(--text-base);
+  padding: 8px 12px;
+}

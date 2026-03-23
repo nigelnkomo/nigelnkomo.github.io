@@ -1,0 +1,127 @@
+.principles {
+  display: grid;
+  gap: 0;
+}
+
+.principle {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 28px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.principle:first-child {
+  padding-top: 0;
+}
+
+.principle:last-child {
+  border-bottom: none;
+}
+
+.principle-number {
+  font-family: 'NeutralFace', serif;
+  font-size: var(--text-xs);
+  color: var(--ink-soft);
+  padding-top: 6px;
+}
+
+.principle-content h3 {
+  font-family: 'NeutralFace', serif;
+  font-size: var(--text-xl);
+  margin-bottom: 12px;
+}
+
+.principle-content p {
+  color: var(--ink-soft);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.archive-grid .section-body {
+  max-width: 800px;
+  gap: 0;
+}
+
+.archive-grid .section-title {
+  padding-top: 0;
+}
+
+.series-index {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.series-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: start;
+}
+
+.series-row:first-child {
+  padding-top: 0;
+}
+
+.series-row:last-child {
+  border-bottom: none;
+}
+
+.series-meta {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.series-meta .series-number {
+  font-family: 'NeutralFace', serif;
+  font-size: var(--text-xs);
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+}
+
+.series-meta .series-title {
+  font-family: 'NeutralFace', serif;
+  font-size: var(--text-xl);
+  margin-bottom: 8px;
+}
+
+.series-meta .series-title a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: var(--text-2xl);
+}
+
+.series-meta .series-title a:hover {
+  color: var(--accent);
+}
+
+.series-meta .series-location {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+}
+
+.series-description {
+  grid-column: 2;
+  margin-top: 16px;
+  color: var(--ink-soft);
+  font-size: var(--text-base);
+  line-height: 1.7;
+}
+
+.series-image-wrapper {
+  grid-column: 2 / span 2;
+}
+
+.series-image-link {
+  display: block;
+}
+
+.series-image-link img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}

@@ -1,0 +1,34 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.section-title {
+  grid-column: span 3;
+  letter-spacing: 0.01em;
+  font-size: var(--text-base);
+  color: var(--ink);
+  padding-top: 6px;
+}
+
+.section-body {
+  grid-column: span 9;
+  display: grid;
+  gap: 26px;
+}
+
+.divider {
+  height: 1px;
+  background: var(--line);
+  margin: 48px 0 40px;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 32px 80px;
+}

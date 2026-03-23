@@ -1,0 +1,27 @@
+<article class="project-item reveal" data-types="{{ include.project.tags | join: ',' }}" data-page="1">
+  <div class="project-index">
+    <div class="project-number">{{ include.index | default: "01" | prepend: "0" }}</div>
+    <h3 class="project-title">{{ include.project.title }}</h3>
+    {% if include.project.location %}
+    <p class="project-location">{{ include.project.location }}</p>
+    {% endif %}
+  </div>
+  <div class="project-content">
+    <div class="project-meta">
+      <span>{{ include.project.year }}</span>
+      {% if include.project.role %}
+      <span>{{ include.project.role }}</span>
+      {% endif %}
+      {% for tag in include.project.tags %}
+      <span>{{ tag }}</span>
+      {% endfor %}
+    </div>
+    <p>{{ include.project.description }}</p>
+    {% if include.project.link %}
+    <a href="{{ include.project.link }}" class="arrow-link" target="_blank" rel="noopener">View Project</a>
+    {% endif %}
+    {% if include.project.case_study %}
+    <a href="{{ include.project.case_study }}" class="arrow-link">Case Study</a>
+    {% endif %}
+  </div>
+</article>
